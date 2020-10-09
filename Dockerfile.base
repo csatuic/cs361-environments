@@ -16,7 +16,8 @@ RUN yes | unminimize && apt-get update \
     #
     # Install C++ tools
     && apt-get -y install build-essential cmake cppcheck valgrind \
-    man bsdmainutils glibc-source netcat ltrace strace sudo \
+    man manpages-posix-dev manpages-posix bsdmainutils glibc-source \
+    netcat ltrace strace sudo \
     # Clean up
     && apt-get autoremove -y \
     && apt-get clean -y \
